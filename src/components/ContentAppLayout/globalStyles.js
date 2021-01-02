@@ -1,24 +1,39 @@
 import css from "styled-jsx/css"
 
-const Colors = {
-  dark: "#222831",
-  lightDark: "#323F4B",
-}
-
 export const globalStyles = css.global`
   /* global - styles */
   * {
     margin: 0;
     padding: 0;
-    color: #fff;
   }
 
-  body {
-    background-color: ${Colors.dark};
+  ::selection {
+    background: var(--transparent-primary-color);
   }
 
-  header {
-    box-shadow: 5px 0.5px 5px rgba(21, 25, 31, 0.9);
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .page {
+    color: var(--text-color);
+    background: var(--primary-color);
   }
 
   h1,
@@ -28,6 +43,7 @@ export const globalStyles = css.global`
   button,
   a {
     font-family: "Montserrat", sans-serif;
+    color: var(--text-color);
   }
 
   a {
@@ -41,5 +57,10 @@ export const globalStyles = css.global`
   p,
   label {
     font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+  }
+
+  button:focus {
+    outline: none;
   }
 `
