@@ -1,0 +1,8 @@
+.theme {
+    --primary-color: #04090f;
+    --secundary-color: #3774c2;
+    --text-color: #FFF;
+
+    --transparent-primary-color: rgba(21, 25, 31, 0.9);
+    --special-text-color: #09f;
+}
