@@ -49,15 +49,7 @@ export const ContentAppLayout = ({ children }) => {
     >
       <Navbar />
       <div className="container">
-        <button
-          style={{
-            padding: 10,
-            border: "1px solid var(--secundary-color)",
-            backgroundColor: isDark ? "#000" : "#FFF",
-            color: isDark ? "#FFF" : "#000",
-          }}
-          onClick={() => setTheme(isDark ? "light" : "dark")}
-        >
+        <button onClick={() => setTheme(isDark ? "light" : "dark")}>
           change theme
         </button>
         {children}
@@ -66,6 +58,20 @@ export const ContentAppLayout = ({ children }) => {
       <style jsx global>
         {globalStyles}
       </style>
+      <style jsx>{`
+        button {
+          padding: 10px;
+          border: 1px solid var(--secundary-color);
+          background-color: ${isDark ? "#0012" : "#FFF"};
+          color: var(--text-color);
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        button:hover {
+          background-color: ${isDark ? "#000" : "#FFF"};
+          color: var(--secundary-color);
+        }
+      `}</style>
     </div>
   )
 }
