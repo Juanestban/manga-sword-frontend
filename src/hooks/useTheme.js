@@ -16,12 +16,13 @@ export const useTheme = () => {
       return "light"
     }
   })
+  console.log(theme, currentTheme)
 
   const setChangeTheme = (value) => {
     try {
       localStorage.setItem(themeLocalStorage, value)
       setTheme(value)
-      currentTheme === "dark"
+      theme === "dark"
         ? (document.documentElement.dataset.theme = "light")
         : (document.documentElement.dataset.theme = "dark")
     } catch {
