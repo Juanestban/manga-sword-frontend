@@ -22,6 +22,7 @@ export const PrimaryContainerLayout = ({ children }) => {
           href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
           type="text/css"
         />
+        <title>manga readers</title>
       </Head>
       <ContentAppLayout>{children}</ContentAppLayout>
     </>

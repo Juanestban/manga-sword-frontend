@@ -16,7 +16,6 @@ export const useTheme = () => {
       return "light"
     }
   })
-  console.log(theme, currentTheme)
 
   const setChangeTheme = (value) => {
     try {

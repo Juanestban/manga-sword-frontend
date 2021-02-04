@@ -1,9 +1,13 @@
+import Head from "next/head"
 import { PrimaryContainerLayout } from "../../src/components/ContentAppLayout"
 import { ListThumbnail } from "../../src/components/Thumbnail/ListThumbnail"
 
 export default function TestPage() {
   return (
     <PrimaryContainerLayout>
+      <Head>
+        <title>test</title>
+      </Head>
       <h2>Title Test-1</h2>
       <p>change Page</p>
       <p
