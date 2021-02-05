@@ -32,5 +32,6 @@ module.exports = {
     "array-callback-return": types.OFF,
     eqeqeq: types.OFF,
     "quote-props": types.OFF,
+    "no-unneeded-ternary": types.OFF,
   },
 }
