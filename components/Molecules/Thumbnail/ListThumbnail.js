@@ -21,13 +21,6 @@ export const ListThumbnail = () => {
           <Thumbnail key={thumb.id} {...thumb} />
         ))}
       </div>
-      <style jsx>{`
-        .content-thumbnail {
-          display: grid;
-          grid-template-columns: repeat(8, 1fr);
-          gap: 1em;
-        }
-      `}</style>
     </>
   )
 }

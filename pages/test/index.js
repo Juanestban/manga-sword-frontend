@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import { PrimaryContainerLayout } from '@components/ContentAppLayout'
-import { ListThumbnail } from '@components/Thumbnail/ListThumbnail'
+import { PrimaryContainerLayout } from '@components/Layouts/ContentAppLayout'
+import { ListThumbnail } from '@components/Molecules/Thumbnail/ListThumbnail'
 
 export default function TestPage() {
   return (
@@ -10,6 +10,7 @@ export default function TestPage() {
       </Head>
       <h2>Title Test-1</h2>
       <p>change Page</p>
+      <button>my button</button>
       <p
         style={{
           color: 'var(--secundary-color)',
