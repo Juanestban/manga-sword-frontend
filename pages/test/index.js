@@ -1,6 +1,6 @@
-import Head from "next/head"
-import { PrimaryContainerLayout } from "../../src/components/ContentAppLayout"
-import { ListThumbnail } from "../../src/components/Thumbnail/ListThumbnail"
+import Head from 'next/head'
+import { PrimaryContainerLayout } from '@components/ContentAppLayout'
+import { ListThumbnail } from '@components/Thumbnail/ListThumbnail'
 
 export default function TestPage() {
   return (
@@ -12,7 +12,7 @@ export default function TestPage() {
       <p>change Page</p>
       <p
         style={{
-          color: "var(--secundary-color)",
+          color: 'var(--secundary-color)',
           fontSize: 20,
           fontWeight: 600,
         }}
@@ -23,7 +23,7 @@ export default function TestPage() {
       <p>change Page</p>
       <p
         style={{
-          color: "var(--secundary-color)",
+          color: 'var(--secundary-color)',
           fontSize: 20,
           fontWeight: 600,
         }}
@@ -34,7 +34,7 @@ export default function TestPage() {
       <p>change Page</p>
       <p
         style={{
-          color: "var(--secundary-color)",
+          color: 'var(--secundary-color)',
           fontSize: 20,
           fontWeight: 600,
         }}

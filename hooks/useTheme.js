@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { keysLocalStorage } from 'src/config/keyLocalStorage'
+import { keysLocalStorage } from '@config/keyLocalStorage'
 
 const { themeLocalStorage } = keysLocalStorage
 export const useTheme = () => {

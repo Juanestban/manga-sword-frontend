@@ -1,5 +1,5 @@
-import { PrimaryContainerLayout } from "../src/components/ContentAppLayout"
-import { ListThumbnail } from "../src/components/Thumbnail/ListThumbnail"
+import { PrimaryContainerLayout } from '@components/ContentAppLayout'
+import { ListThumbnail } from '@components/Thumbnail/ListThumbnail'
 
 export default function HomePage() {
   return (
@@ -9,7 +9,7 @@ export default function HomePage() {
       <p>change Page</p>
       <p
         style={{
-          color: "var(--secundary-color)",
+          color: 'var(--secundary-color)',
           fontSize: 20,
           fontWeight: 600,
         }}
@@ -19,7 +19,7 @@ export default function HomePage() {
       <ListThumbnail />
       <p
         style={{
-          color: "var(--secundary-color)",
+          color: 'var(--secundary-color)',
           fontSize: 20,
           fontWeight: 600,
         }}
@@ -29,7 +29,7 @@ export default function HomePage() {
       <ListThumbnail />
       <p
         style={{
-          color: "var(--secundary-color)",
+          color: 'var(--secundary-color)',
           fontSize: 20,
           fontWeight: 600,
         }}

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { jsxNavbar } from './styles'
 
 export const Navbar = () => {
   return (
@@ -22,42 +23,7 @@ export const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <style jsx>{`
-        header {
-          display: flex;
-          padding: 10px 10px;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 20px;
-          border-bottom: 1px solid var(--transparent-primary-color);
-        }
-         {
-          /* .content-logo {} */
-        }
-
-        .title {
-          display: flex;
-          align-items: center;
-        }
-
-        h1 {
-          font-size: 20px;
-        }
-
-        ul {
-          display: flex;
-        }
-
-        li a {
-          padding: 10px;
-          margin: 0 5px;
-        }
-
-        a:hover,
-        h1:hover {
-          color: var(--secundary-color);
-        }
-      `}</style>
+      <style jsx>{jsxNavbar}</style>
     </header>
   )
 }

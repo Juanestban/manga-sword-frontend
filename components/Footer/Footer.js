@@ -1,3 +1,5 @@
+import { jsxFooter } from './styles'
+
 export const Footer = () => {
   return (
     <>
@@ -9,21 +11,7 @@ export const Footer = () => {
           </p>
         </div>
       </footer>
-      <style jsx>{`
-        footer {
-          margin-top: 20px;
-          padding: 20px 0;
-          border-top: 1px solid var(--transparent-primary-color);
-        }
-
-        .text-center {
-          text-align: center;
-        }
-
-        .text-title-designer {
-          font-weight: bold;
-        }
-      `}</style>
+      <style jsx>{jsxFooter}</style>
     </>
   )
 }
