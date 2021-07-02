@@ -1,10 +1,10 @@
-import Link from "next/link"
+import Link from 'next/link'
 
-export const Thumbnail = ({ name = "", image = "" }) => {
+export const Thumbnail = ({ name = '', image = '' }) => {
   return (
     <>
       <Link href="/test">
-        <a style={{ position: "relative", border: "1px solid cyan" }}>
+        <a style={{ position: 'relative', border: '1px solid cyan' }}>
           <div className="image-content"></div>
           <h4 className="text">{name}</h4>
         </a>

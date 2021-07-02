@@ -1,19 +1,19 @@
-import { useState } from "react"
-import { keysLocalStorage } from "src/config/keyLocalStorage"
+import { useState } from 'react'
+import { keysLocalStorage } from 'src/config/keyLocalStorage'
 
 const { themeLocalStorage } = keysLocalStorage
 export const useTheme = () => {
   let currentTheme
-  if (typeof window !== "undefined")
+  if (typeof window !== 'undefined')
     currentTheme = document.documentElement.dataset.theme
   const [theme, setTheme] = useState(() => {
     try {
       const item = localStorage.getItem(themeLocalStorage)
       currentTheme === undefined &&
         (document.documentElement.dataset.theme = item)
-      return item ? item : "light"
+      return item ? item : 'light'
     } catch {
-      return "light"
+      return 'light'
     }
   })
 
@@ -21,11 +21,11 @@ export const useTheme = () => {
     try {
       localStorage.setItem(themeLocalStorage, value)
       setTheme(value)
-      theme === "dark"
-        ? (document.documentElement.dataset.theme = "light")
-        : (document.documentElement.dataset.theme = "dark")
+      theme === 'dark'
+        ? (document.documentElement.dataset.theme = 'light')
+        : (document.documentElement.dataset.theme = 'dark')
     } catch {
-      console.log("error theme")
+      console.log('error theme')
     }
   }
 

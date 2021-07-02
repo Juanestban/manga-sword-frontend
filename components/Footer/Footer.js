@@ -4,7 +4,7 @@ export const Footer = () => {
       <footer>
         <div className="container">
           <p className="text-center">
-            Copyright &#169; 2021 All rights reserved. Design By{" "}
+            Copyright &#169; 2021 All rights reserved. Design By{' '}
             <b>manga-reader.com</b>
           </p>
         </div>

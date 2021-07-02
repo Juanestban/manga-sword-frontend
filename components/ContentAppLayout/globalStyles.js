@@ -1,4 +1,4 @@
-import css from "styled-jsx/css"
+import css from 'styled-jsx/css'
 
 export const globalStyles = css.global`
   /* global - styles */
@@ -19,7 +19,7 @@ export const globalStyles = css.global`
     --bg-color-hover-button: #fff;
   }
 
-  [data-theme="dark"] {
+  [data-theme='dark'] {
     --primary-color: #04090f;
     --secundary-color: #3774c2;
     --text-color: #fff;
@@ -66,7 +66,7 @@ export const globalStyles = css.global`
   h4,
   button,
   a {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
   }
 
@@ -80,7 +80,7 @@ export const globalStyles = css.global`
 
   p,
   label {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
   }
 

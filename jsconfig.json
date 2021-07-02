@@ -2,11 +2,15 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/"],
-      "@hooks/*": ["src/hooks/"],
-      "@config/*": ["src/config/"],
-      "@styles/*": ["src/styles/"],
-      "@context/*": ["src/context/"]
+      "@components/*": ["components/*"],
+      "@config/*": ["config/*"],
+      "@contexts/*": ["contexts/*"],
+      "@hooks/*": ["hooks/*"],
+      "@models/*": ["models/*"],
+      "@pages/*": ["pages/*"],
+      "@public/*": ["public/*"],
+      "@services/*": ["services/*"],
+      "@styles/*": ["styles/*"]
     }
   }
 }

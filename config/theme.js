@@ -1,19 +1,19 @@
-import { useState } from "react"
+import { useState } from 'react'
 
 // Mantenimiento
 export const ThemeCurrently = () => {
   const [theme, setTheme] = useState(() => {
     try {
-      const item = localStorage.getItem("theme")
-      return item !== null ? JSON.parse(item) : "dark"
+      const item = localStorage.getItem('theme')
+      return item !== null ? JSON.parse(item) : 'dark'
     } catch (error) {
-      return "dark"
+      return 'dark'
     }
   })
 
   const setThemeCurrently = (value) => {
     try {
-      localStorage.setItem("theme", JSON.stringify(value))
+      localStorage.setItem('theme', JSON.stringify(value))
       setTheme(value)
     } catch (error) {
       console.log(error)

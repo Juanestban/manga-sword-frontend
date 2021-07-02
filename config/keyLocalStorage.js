@@ -1,3 +1,3 @@
 export const keysLocalStorage = {
-  themeLocalStorage: "@theme",
+  themeLocalStorage: '@theme',
 }

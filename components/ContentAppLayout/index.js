@@ -1,8 +1,8 @@
-import Head from "next/head"
-import { Footer } from "../Footer/Footer"
-import { Navbar } from "../Navbar/Navbar"
-import { globalStyles } from "./globalStyles"
-import { useTheme } from "../../hooks/useTheme"
+import Head from 'next/head'
+import { Footer } from '../Footer/Footer'
+import { Navbar } from '../Navbar/Navbar'
+import { globalStyles } from './globalStyles'
+import { useTheme } from '../../hooks/useTheme'
 
 export const PrimaryContainerLayout = ({ children }) => {
   return (
@@ -31,9 +31,9 @@ export const PrimaryContainerLayout = ({ children }) => {
 
 export const ContentAppLayout = ({ children }) => {
   const [theme, setTheme] = useTheme()
-  const isDark = theme === "dark"
+  const isDark = theme === 'dark'
 
-  const changeTheme = () => setTheme(isDark ? "light" : "dark")
+  const changeTheme = () => setTheme(isDark ? 'light' : 'dark')
 
   return (
     <div className={`page`}>
