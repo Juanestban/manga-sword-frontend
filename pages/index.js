@@ -1,5 +1,5 @@
-import { PrimaryContainerLayout } from '@components/ContentAppLayout'
-import { ListThumbnail } from '@components/Thumbnail/ListThumbnail'
+import { PrimaryContainerLayout } from '@components/Layouts/ContentAppLayout'
+import { ListThumbnail } from '@components/Molecules/Thumbnail/ListThumbnail'
 
 export default function HomePage() {
   return (
