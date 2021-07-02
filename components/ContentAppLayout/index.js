@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import { Footer } from '../Footer/Footer'
-import { Navbar } from '../Navbar/Navbar'
+import Footer from '../Footer'
+import Navbar from '../Navbar'
 import { globalStyles } from './globalStyles'
 import { useTheme } from '../../hooks/useTheme'
 
