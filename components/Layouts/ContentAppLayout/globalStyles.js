@@ -4,7 +4,7 @@ export const globalStyles = css.global`
   /* global - styles */
   :root {
     --primary-color: #fff;
-    --secundary-color: #ccc;
+    --secundary-color: #09f;
     --text-color: #000;
 
     --scroll-color: #eee;
@@ -27,7 +27,7 @@ export const globalStyles = css.global`
 
     --border-color: #000102;
 
-    --transparent-primary-color: rgba(21, 25, 31, 0.9);
+    --transparent-primary-color: rgba(21, 25, 54, 0.9);
     --special-text-color: #09f;
     --color-button: #0012;
     --text-color-button: #000;
@@ -94,39 +94,8 @@ export const globalStyles = css.global`
 
   p,
   label {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--text-color);
-  }
-
-  button {
-    position: relative;
-    overflow: hidden;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.7rem 0.9rem;
-    font-family: 'Montserrat', sans-serif;
-    border: 0;
-    border-radius: 0.5rem;
-    background-color: transparent;
-    color: var(--text-color);
-    cursor: pointer;
-    transition-property: background, box-shadow;
-    transition-duration: 0ms.35s;
-  }
-  button:hover {
-    background-color: var(----bg-color-hover-button);
-    color: var(--secundary-color);
-  }
-
-  button:focus {
-    box-shadow: 0 0 0 2px var(--border-color);
-  }
-
-  button:disabled {
-    color: #555455;
-    background-color: #302e30;
-    cursor: not-allowed;
   }
 
   figure {
