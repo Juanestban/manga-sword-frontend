@@ -10,8 +10,10 @@ export default function MyApp({ Component, pageProps }) {
           href="/images/favicon.ico"
           type="image/x-icon"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;800&family=Roboto:wght@400;700&display=swap"
           rel="stylesheet"
         />
         <link

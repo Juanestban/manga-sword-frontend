@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <PrimaryContainerLayout>
       <h2>Welcome to Next.js!</h2>
-      <p>yo soy el parrafo con el font-family del Open-Sans</p>
+      <p>yo soy el parrafo con el font-family del Roboto</p>
       <p>change Page</p>
       <p
         style={{
