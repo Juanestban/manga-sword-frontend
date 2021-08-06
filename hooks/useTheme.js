@@ -2,10 +2,12 @@ import { useState } from 'react'
 import { keysLocalStorage } from '@config/keyLocalStorage'
 
 const { themeLocalStorage } = keysLocalStorage
+
 export const useTheme = () => {
   let currentTheme
   if (typeof window !== 'undefined')
     currentTheme = document.documentElement.dataset.theme
+
   const [theme, setTheme] = useState(() => {
     try {
       const item = localStorage.getItem(themeLocalStorage)
@@ -17,13 +19,13 @@ export const useTheme = () => {
     }
   })
 
-  const setChangeTheme = (value) => {
+  const setChangeTheme = () => {
     try {
-      localStorage.setItem(themeLocalStorage, value)
-      setTheme(value)
-      theme === 'dark'
-        ? (document.documentElement.dataset.theme = 'light')
-        : (document.documentElement.dataset.theme = 'dark')
+      const currentTheme = theme === 'dark' ? 'light' : 'dark'
+
+      localStorage.setItem(themeLocalStorage, currentTheme)
+      setTheme(currentTheme)
+      document.documentElement.dataset.theme = currentTheme
     } catch {
       console.log('error theme')
     }
