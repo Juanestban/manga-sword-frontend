@@ -3,10 +3,11 @@ import css from 'styled-jsx/css'
 export const jsxNavbar = css`
   header {
     display: flex;
-    padding: 10px 10px;
+    padding: 0 10px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    background-color: var(--primary-color);
     border-bottom: 1px solid var(--transparent-primary-color);
   }
 
@@ -17,6 +18,7 @@ export const jsxNavbar = css`
 
   h1 {
     font-size: 20px;
+    font-weight: normal;
   }
 
   ul {
@@ -24,7 +26,8 @@ export const jsxNavbar = css`
   }
 
   li a {
-    padding: 10px;
+    display: block;
+    padding: 0.5rem 0.9rem;
     margin: 0 5px;
   }
 
