@@ -1,7 +1,10 @@
 import Link from 'next/link'
+import { FiMenu } from 'react-icons/fi'
 import { ButtonIconTheme } from '@components/Atoms/Button/variants/ButtonIconTheme'
+import Button from '@components/Atoms/Button'
 import { jsxNavbar } from './styles'
 import SearchInput from '../SearchInput'
+import ButtonProfile from '../ButtonProfile'
 
 export const Navbar = () => {
   return (
@@ -16,6 +19,11 @@ export const Navbar = () => {
       <div className="search-container">
         <SearchInput />
       </div>
+      {/* <div className="burger">
+        <Button>
+          <FiMenu size={20} />
+        </Button>
+      </div> */}
       <nav>
         <ul>
           <li>
@@ -30,6 +38,9 @@ export const Navbar = () => {
           </li>
           <li>
             <ButtonIconTheme />
+          </li>
+          <li>
+            <ButtonProfile />
           </li>
         </ul>
       </nav>

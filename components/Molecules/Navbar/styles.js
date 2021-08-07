@@ -5,6 +5,7 @@ export const jsxNavbar = css`
     display: flex;
     padding: 0 10px;
     justify-content: space-between;
+    position: relative;
     align-items: center;
     margin-bottom: 20px;
     background-color: var(--primary-color);
@@ -25,14 +26,29 @@ export const jsxNavbar = css`
     display: flex;
   }
 
+  ul li {
+    display: flex;
+    align-items: center;
+  }
+
   li a {
     display: block;
     padding: 0.5rem 0.9rem;
     margin: 0 5px;
+    font-size: var(--font-size-normal);
   }
 
   a:hover,
   h1:hover {
     color: var(--secundary-color);
+  }
+
+  .content-logo {
+  }
+
+  .search-container {
+    display: flex;
+    min-width: 20rem;
+    flex: 0 1 728px;
   }
 `
