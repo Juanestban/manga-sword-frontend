@@ -1,18 +1,17 @@
 import { FiSearch } from 'react-icons/fi'
-import Button from '@components/Atoms/Button'
-import styled from 'styled-components'
-
-const ButtonSearch = styled(Button)``
-const ContainerSearch = styled.div``
+import Input from '@components/Atoms/Input'
+import { Form, ContainerSearch, ButtonSearch } from './styles'
 
 export const SearchInput = () => {
   return (
-    <ContainerSearch>
-      <input type="text" />
-      <ButtonSearch>
-        {/* refactor this button Icon like object button[icon] == name or title pass by props */}
-        <FiSearch />
-      </ButtonSearch>
-    </ContainerSearch>
+    <Form>
+      <ContainerSearch>
+        <Input type="text" placeholder="Search" />
+        <ButtonSearch>
+          {/* refactor this button Icon like object button[icon] == name or title pass by props */}
+          <FiSearch />
+        </ButtonSearch>
+      </ContainerSearch>
+    </Form>
   )
 }
