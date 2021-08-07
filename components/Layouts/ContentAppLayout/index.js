@@ -5,7 +5,7 @@ import { globalStyles, stylesPrincipalLayout } from './globalStyles'
 export const PrimaryContainerLayout = ({ children }) => (
   <div className="page">
     <Navbar />
-    <div className="container">{children}</div>
+    <main className="container">{children}</main>
     <Footer />
     <style jsx global>
       {globalStyles}

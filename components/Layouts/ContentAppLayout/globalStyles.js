@@ -3,35 +3,53 @@ import css from 'styled-jsx/css'
 export const globalStyles = css.global`
   /* global - styles */
   :root {
+    /* principal colors */
     --primary-color: #fff;
     --secundary-color: #09f;
     --text-color: #000;
 
+    /* another */
     --scroll-color: #eee;
     --scroll-rectangle: #888;
     --scroll-hover: #555;
 
-    --transparent-primary-color: rgba(204, 204, 204, 0.9);
+    --transparent-primary-color: #ddd;
     --special-text-color: #09f;
     --color-button: #fff;
     --text-color-button: #000;
     --bg-color-hover-button: #fff;
+
+    --border-color-input: #ddd;
+
+    /* colors button Profile */
+    --color-border-buttton-profile: rgba(232, 234, 237, 0.08);
   }
 
   [data-theme='dark'] {
+    /* principal colors */
     --primary-color: #04090f;
     --secundary-color: #3774c2;
-    --text-color: #fff;
+    --text-color: hsla(0, 100%, 100%, 0.88);
 
     --scroll-color: #000102;
 
-    --border-color: #000102;
+    /* another */
+    --bg-color: #04090f;
 
-    --transparent-primary-color: rgba(21, 25, 54, 0.9);
+    --border-color: #000102;
+    --border-color-input: #3c4147;
+
+    --transparent-primary-color: #3c4147;
     --special-text-color: #09f;
     --color-button: #0012;
     --text-color-button: #000;
     --bg-color-hover-button: #000;
+
+    /* colors button Profile */
+    --color-border-buttton-profile: rgba(232, 234, 237, 0.08);
+
+    /* font-size */
+    --font-size-normal: 0.99rem;
   }
 
   html {
@@ -42,6 +60,7 @@ export const globalStyles = css.global`
   body {
     margin: 0;
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
   }
 
   main {
@@ -94,7 +113,7 @@ export const globalStyles = css.global`
 
   p,
   label {
-    font-family: 'Roboto', sans-serif;
+    font-size: var(--font-size-normal);
     color: var(--text-color);
   }
 
